@@ -2,44 +2,137 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tea House Daisy</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.19/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- tailwind Custom CSS for color -->
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tea House Daisy</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.19/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- font awsome icon -->
+  <script src="https://kit.fontawesome.com/ca996d26ad.js" crossorigin="anonymous"></script>
+  <!-- tailwind Custom CSS for color -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            dark: '#777',
+            ranzu: '#0000FF',
+            dark1: '#1C1C1C',
           }
         }
-      </script>
-      <!-- Custome google fonts -->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&family=Sora:wght@300;500;700&family=Work+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-      <style>
-        .manrope {
-            font-family: 'Manrope';
-        }
-      </style>
+      }
+    }
+  </script>
+  <!-- Custome google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&family=Sora:wght@300;500;700&family=Work+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <style>
+    .manrope {
+      font-family: 'Manrope';
+    }
+  </style>
 </head>
 
 <body class="manrope">
-    <header>
+  <header class="container mx-auto">
+    <div class="">
+      <div class="hero-content max-w-full flex flex-col lg:flex-row justify-between">
+        <div>
+          <h1 class="text-7xl font-extrabold">It's good<br>
+            tea time at The<br> Tea House</h1>
+          <p class="py-6 text-base font-medium text-dark ">Tea and Botanical Solutions Supplier Give Optimum
+            Satisfaction To Your Taste Buds.</p>
+          <button class="btn btn-primary">Get Started</button>
+        </div>
+        <div>
+          <div>
+            <img src="images/banner.png" class="max-w-[270px] lg:max-w-full" />
+            <div
+              class="flex items-center gap-4 shadow-md w-48 lg:w-64 p-8 rounded-lg -mt-24 ml-10 lg:ml-32 bg-white absolute">
+              <i class="fa-solid fa-star text-3xl text-amber-500"></i>
+              <div>
+                <h3 class="text-3xl font-medium">5.00</h3>
+                <p class="text-base font-semibold text-dark1">Trust Pilot Ratings</p>
+              </div>
+            </div>
 
-    </header>
-    <main>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="container mx-auto">
+    <!-- Our Featured Products Section -->
+    <section class="pt-36">
+      <!-- Featured products texts -->
+      <div class=" space-y-8 text-center mb-20">
+        <h1 class="text-5xl font-extrabold">Our Featured Products</h1>
+        <p class="text-base font-medium lg:max-w-5xl mx-auto">
+          There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
+          some form, by injected humour, or randomised words which don't look even slightly believable.
+        </p>
+      </div>
+      <!-- Card Container -->
+      <div class="grid grid-cols1 md:grid-cols-2 lg:grid-cols-4 gap-14">
+        <!-- card 1 -->
+        <div class="bg-[#F4F4F4] rounded-xl p-8 space-y-6">
+          <div class="flex justify-center">
+            <img src="images/tea-1.png" alt="">
+          </div>
+          <div class="text-center space-y-6">
+            <h3 class="text-2xl font-extrabold">Milk Tea</h3>
+            <p class="text-base font-semibold">
+              Creamer could be replaced by fresh milk
+            </p>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div class="bg-[#F4F4F4] rounded-xl p-8 space-y-6">
+          <div class="flex justify-center">
+            <img src="images/tea-2.png" alt="">
+          </div>
+          <div class="text-center space-y-6">
+            <h3 class="text-2xl font-extrabold">Milk Tea</h3>
+            <p class="text-base font-semibold">
+              Creamer could be replaced by fresh milk
+            </p>
+          </div>
+          </div>
+          <!-- card 3 -->
+          <div class="bg-[#F4F4F4] rounded-xl p-8 space-y-6">
+            <div class="flex justify-center">
+              <img src="images/tea-3.png" alt="">
+            </div>
+            <div class="text-center space-y-6">
+              <h3 class="text-2xl font-extrabold">Milk Tea</h3>
+              <p class="text-base font-semibold">
+                Creamer could be replaced by fresh milk
+              </p>
+            </div>
+            </div>
+            <!-- card 4 -->
+            <div class="bg-[#F4F4F4] rounded-xl p-8 space-y-6">
+              <div class="flex justify-center">
+                <img src="images/tea-4.png" alt="">
+              </div>
+              <div class="text-center space-y-6">
+                <h3 class="text-2xl font-extrabold">Milk Tea</h3>
+                <p class="text-base font-semibold">
+                  Creamer could be replaced by fresh milk
+                </p>
+              </div>
+              </div>
+            </div>
 
-    </main>
-    <footer>
+    </section>
+  </main>
+  <footer>
 
-    </footer>
+  </footer>
 </body>
 
 </html>
